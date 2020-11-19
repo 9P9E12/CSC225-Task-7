@@ -3,7 +3,6 @@
 // argument: Hello
 // return: olleH
 function reverseThisString(string){
-
 }
 
 
@@ -42,7 +41,11 @@ function passOrFail(array){
 function germanNumbers(){
     const cardinalNumbers = [2,3,4,5,6];
     const germanNumbers = ['zwei', 'drei', 'vier', 'fünf', 'sechs'];
-
+    var numbers = [];
+for(var i = 0; i < cardinalNumbers.length; i++){
+    numbers.push(cardinalNumbers[i] + " is " + germanNumbers[i]);
+}
+return numbers;
 }
 
 
@@ -56,3 +59,8 @@ function returnPrimeNumbers(){
 }
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
+
+var numbers = germanNumbers();
+for(var i = 0; i < numbers.length; i++){
+    console.log(numbers[i]);
+}
