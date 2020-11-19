@@ -20,7 +20,11 @@ function swapCase(string) {
 // return: [-5, 0, 5, 10, 15]
 // hint: use Array.map
 function toCelcius(array){
+    return array.map(farConvert);
+}
 
+function farConvert(num){
+    return  (num - 32) * (5/9);
 }
 
 
@@ -65,8 +69,7 @@ function returnPrimeNumbers(){
 }
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
-var array = [20, 30, 50, 80, 90, 100, 10];
-var result = passOrFail(array);
-for(var i = 0; i < 7; i++){
-    console.log(result[i]);
+var result = toCelcius([23, 32, 41, 50, 59]);
+for (let index = 0; index < result.length; index++) {
+    console.log(result[index]);
 }
