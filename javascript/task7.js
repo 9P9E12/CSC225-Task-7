@@ -30,7 +30,12 @@ function toCelcius(array){
 // return: [false, false, false, true, true, true]
 // hint: use Array.map
 function passOrFail(array){
+    var bools = array.map(greaterThan);
+    return bools;
+}
 
+function greaterThan(num){
+    return num >= 75;
 }
 
 
@@ -55,12 +60,13 @@ return numbers;
 // hint use: Array.filter
 function returnPrimeNumbers(){
     const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+    var primes = [];
 
 }
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
-
-var numbers = germanNumbers();
-for(var i = 0; i < numbers.length; i++){
-    console.log(numbers[i]);
+var array = [20, 30, 50, 80, 90, 100, 10];
+var result = passOrFail(array);
+for(var i = 0; i < 7; i++){
+    console.log(result[i]);
 }
