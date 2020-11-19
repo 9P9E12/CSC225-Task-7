@@ -11,7 +11,15 @@ function reverseThisString(string){
 // argument: Hello World
 // return: hELLO wORLD
 function swapCase(string) {
-
+    var swappedString = [];
+    for(var i = 0; i < string.length; i++){
+        if(string[i] == string[i].toUpperCase()){
+            swappedString.push(string[i].toLowerCase());
+        } else {
+            swappedString.push(string[i].toUpperCase());
+        }
+    }
+    return swappedString.join("");
 }
 
 //convert array of numbers from farenheit to celcius
@@ -84,8 +92,5 @@ function primeCheck(num){
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
 
-var result = returnPrimeNumbers();
-for (let index = 0; index < result.length; index++) {
-    console.log(result[index]);
-    
-}
+var string = swapCase("Hello World");
+console.log(string);
