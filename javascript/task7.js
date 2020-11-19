@@ -3,6 +3,10 @@
 // argument: Hello
 // return: olleH
 function reverseThisString(string){
+    var reversed = string.split("");
+    reversed = reversed.reverse();
+    reversed = reversed.join("");
+    return reversed;
 }
 
 
@@ -92,5 +96,5 @@ function primeCheck(num){
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
 
-var string = swapCase("Hello World");
+var string = reverseThisString("Hello World");
 console.log(string);
