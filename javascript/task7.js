@@ -95,7 +95,7 @@ function primeCheck(num){
 }
 
 //Write a function that loops through and console.log's the numbers from 1 to 100, except multiples of three, log (without quotes) "CSC225 RULES" instead of the number, for the multiples of five, log (without quotes) "I LOVE JAVASCRIPT". For numbers which are multiples of both three and five, log (without quotes) "CSC225 RULES I LOVE JAVASCRIPT" 
-function fizzbuzz(){
+function oneToOneHundred(){
     for(var i = 1; i < 100; i++){
         var output = [];
         if(i % 3 == 0){
@@ -110,5 +110,3 @@ function fizzbuzz(){
         console.log(output.join(" "));
     }
 }
-
-fizzbuzz();
